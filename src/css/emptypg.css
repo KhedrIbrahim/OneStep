@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0e1538c9;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+}
+#dog{
+    position: relative;
+    top: 28px;
+    right: 42px;
+    width: 700px;
+    height: 200px;
+    background: url(../img/undraw_dog_c7i6.svg);
+    background-size: 100% 100%;
+    z-index: 1000;
+
+}
+.box{
+    width: 700px;
+    height: 450px;
+    background-color: #00000039;
+    color: #dfd2d2e7;
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.box::before{
+    position:absolute;
+    content: "";
+    width: 300px;
+    height: 200%;
+    bottom: -60%;
+    background: linear-gradient(rgb(255, 0, 0),white, rgb(0, 0, 255));
+    animation: border 4s linear infinite;
+    z-index: -1;
+}
+
+.box::after{
+    position:absolute;
+    content: "";
+    inset: 5px;
+    background-color: #0e1538;
+    border-radius: 18px;
+    z-index: -1;
+}
+@keyframes border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+#msg{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+}
+i{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 80px;
+    color: #dfd2d2e7;
+}
+#link{
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    background-color: #dfd2d2e7;
+    border-radius: 6px;
+    margin-top: 30px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 481px) {
+    body{
+        background-color: #0e1538;
+        justify-content: flex-end;
+    }
+    .box{
+        width: 100%;
+        height: 100vh;
+    }
+    #dog{
+        display: none;
+    }
+    #msg{
+        padding: 15px;
+        height: 300px;
+        font-size: 40px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    i{
+        margin-top: 100px;
+    }
+    .box::after{
+        inset: 10px;
+    }
+    .box::before{
+        width: 350px;
+        height: 400%;
+        animation: border-mo-siz 5s alternate infinite ease-in-out;
+    }
+    @keyframes border-mo-siz{
+        0%{
+            transform: rotate(10deg);
+        }
+        100%{
+            transform: rotate(170deg);
+        }
+    }
+}

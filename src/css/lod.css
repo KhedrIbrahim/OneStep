@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1538;
+}
+#container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+}
+#container span{
+    background-color: rgb(157, 255, 0);
+    width: 7px;
+    height: 10px;
+}
+
+
+.sp-a{
+    animation: lod 700ms alternate infinite ;
+}
+.sp-b{
+    animation: lod 700ms alternate 120ms infinite;
+}
+.sp-c{
+    animation: lod 700ms alternate 360ms infinite;
+}
+.sp-c{
+    animation: lod 700ms alternate 360ms infinite;
+}
+.sp-cd{
+    animation: lod 700ms alternate 480ms infinite;
+}
+
+@keyframes lod{
+    50%{
+
+        background-color: rgb(165, 71, 129);
+    }
+    100%{
+        height: 150px;
+        background-color: rgb(71, 128, 165);
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tictactoe.css"/>
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- LOGO ICON -->
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/reshot-icon-abstract-figure-QDSYZE7RT6.svg">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div id="back-home">
+        <i id="open" class="fa-solid fa-arrow-right"></i>
+        <i id="close" class="fa-solid fa-xmark"></i>
+        <div id="back-btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="box">
+        <div id="playerx">
+            <span id="title-x" class="tit x center"><span id="onlinex"></span> Player<span class="sp-x"></span></span>
+            <span id="res-x" class="res x center">0</span>
+            <span id="plusx">+1</span>
+            <button id="start-x">Start</button>
+        </div>
+        <div id="basic">
+            <span id="line"></span>
+            <span id="back"></span>
+            <div id="win-msg" class="center">
+                <span id="msg" class="center"></span>
+                <button id="continue" class="center">Continue</button>
+            </div>
+            <div id="sq-one" class="square one"></div>
+            <div id="sq-two" class="square two"></div>
+            <div id="sq-three" class="square three"></div>
+            <div id="sq-four" class="square four"></div>
+            <div id="sq-five" class="square five"></div>
+            <div id="sq-six" class="square six"></div>
+            <div id="sq-seven" class="square seven"></div>
+            <div id="sq-eight" class="square eight"></div>
+            <div id="sq-nine" class="square nine"></div>
+        </div>
+        <div id="playero">
+            <span id="title-o" class="tit o center"><span id="onlineo"></span> Player <span class="sp-o"></span></span>
+            <span id="res-o" class="res o center">0</span>
+            <span id="pluso">+1</span>
+            <button id="start-o">Start</button>
+        </div>
+    </div>
+
+
+    <script src="tictactoe.js"></script>
+</body>
+</html>

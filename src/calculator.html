@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/calculator.css"/>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="../CSS/normalize.css"/>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="../CSS/all.min.css"/>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+            <!-- LOGO ICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/reshot-icon-abstract-figure-QDSYZE7RT6.svg">
+    <title>Caluclator</title>
+</head>
+<body>
+    <div id="back">
+        <i id="open" class="fa-solid fa-arrow-right"></i>
+        <i id="close" class="fa-solid fa-xmark"></i>
+        <div id="back-btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="basic-container">
+        <!-- Screen Of Final Result -->
+        <div class="screen" id="screen">
+            <div id="btn-dar-white"><i id="dark-icon" class="fa-solid fa-moon"></i></div>
+            <div id="result"><!--Test--><span id="res-span">|</span></div>
+        </div>
+
+        <!-- Body Of Calculator -->
+        <div class="bdy-calc" id="bdy-calc">
+            <button id="addition" class="btn addition" ><i class="fa-solid fa-plus"></i></button>
+            <button id="num-seven" class="btn">7</button>
+            <button id="num-four" class="btn">4</button>
+            <button id="num-one" class="btn ">1</button>
+            <button id="dot" class="btn dot">.</button>
+            <button id="subtractions" class="btn subtractions"><i class="fa-solid fa-minus"></i></button>
+            <button id="num-eight" class="btn">8</button>
+            <button id="num-five" class="btn">5</button>
+            <button id="num-two" class="btn">2</button>
+            <button id="num-zero" class="btn">0</button>
+            <button id="multiplications" class="btn multiplications"><i class="fa-sharp fa-solid fa-x"></i></button>
+            <button id="num-nine" class="btn">9</button>
+            <button id="num-six" class="btn">6</button>
+            <button id="num-three" class="btn">3</button>
+            <button id="deletebtn" class="btn deletebtn"><i class="fa-solid fa-delete-left"></i></button>
+            <button id="division" class="btn division"><i class="fa-solid fa-divide"></i></button>
+            <button id="clear" class="btn clear"><i class="fa-solid fa-c"></i></button>
+            <button id="equal" class="btn equal"><i class="fa-solid fa-equals"></i></button>
+            
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

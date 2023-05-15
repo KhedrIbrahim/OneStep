@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exchange.css"/>
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- LOGO ICON -->
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/reshot-icon-abstract-figure-QDSYZE7RT6.svg">
+    <title>Exchange Rate</title>
+</head>
+<body>
+    <div id="back">
+        <i id="open" class="fa-solid fa-arrow-right"></i>
+        <i id="close" class="fa-solid fa-xmark"></i>
+        <div id="back-btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="box">
+        <div id="basic">
+            <div class="cul-one from">
+                <span>From</span>
+                <select id="slct-cur-one"></select>
+            </div>
+            <div class="cul-two">
+                <span>Amount</span>
+                <input type="number" id="val-one" name="value" min="0" value="1" step="100"/>
+            </div>
+            <div class="cul-one to">
+                <span>To</span>
+                <select id="slct-cur-two"></select>
+            </div>
+        </div>
+
+        <button id="cnv">Convert</button>
+
+        <div id="result-box">
+            <div id="result">
+                    <div id="res-info-one">
+                        <div id="res-one">
+                            <div id="flag-one"><img id="img-one"></div>
+                            <span id="res-val-one"></span>
+                            <span id="res-title-one"></span>
+                        </div>
+                        <span id="eul"><i class="fa-solid fa-equals"></i></span>
+                        <div id="res-two">
+                            <div id="flag-two"><img id="img-two" ></div>
+                            <span id="res-val-two"></span>
+                            <span id="res-title-two"></span>
+                        </div>
+                    </div>
+                    <div id="date"></div>
+                    <span id="alert"></span>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="exchange.js"></script>
+</body>
+</html>

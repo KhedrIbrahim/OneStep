@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #0e1538;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center ;
+    font-family: 'Cairo', sans-serif;
+}
+.basic{
+    width: 950px;
+    height: 400px;
+    padding: 15px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.box .links{
+    background-color: rgba(63, 63, 139, 0.678);
+    width: calc((100% - 70px) / 4);
+    height: calc(100% - 40px);
+    transition: 150ms;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.151);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+}
+.box .links:hover{
+    width: calc((100% - 40px) / 4);
+    cursor: pointer;
+    height: 100%;
+}
+.links:hover.links::before,
+.links:hover.links::after{
+    width: 100%;
+    left: 0px;
+}
+.links::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 50%;
+    height: 2px;
+    background-color: #ff5722;
+    top: 0px;
+    transition: all 200ms ease-out;
+}
+.links::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: 0px;
+    left: 60%;
+    height: 2px;
+    background-color: #ff5722;
+    transition: all 200ms ease-out;
+}
+.tictac a,
+.links a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.imgtic,
+.img{
+    width: 100%;
+    height: 60% ;
+    background-position: center;
+    position: relative;
+}
+.img.one{
+    background: url(../img/vecteezy_3d-password-input-illustration-design_10998284_874.png) no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+.img.two{
+    background: url(../img/vecteezy_thunderstorm-on-transparent-background_19552647_18.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.img.three{
+    background: url(../img/vecteezy_object-interest-tax-illustration-3d_21306587_334.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.img.four{
+    background: url(../img/vecteezy_financial-money-calculation-concept-3d-illustration-or-3d_10915797_906.png) no-repeat;
+    background-position: center;
+    background-size: 110%;
+}
+.imgtic{
+    background: url(../img/tictac.com.png) no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+.imgtic:before,
+.img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.185);
+    top: 0px;
+}
+.link-tit-tic,
+.link-tit{
+    color: #ff5722;
+    font-size: 22px;
+    text-align: center;
+}
+.link-desc-tic,
+.link-desc{
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+
+.basic-two{
+    /* background-color: rgba(255, 0, 0, 0.205); */
+    width: 950px;
+    height: 400px;
+    padding: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.tictac{
+    background-color: rgba(63, 63, 139, 0.678);
+    width: calc((100% - 70px) / 4);
+    height: calc(100% - 40px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    transition: 150ms;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.151);
+}
+.tictac:hover{
+    width: calc((100% - 40px) / 4);
+    cursor: pointer;
+    height: 100%;
+}
+.tictac::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 50%;
+    height: 2px;
+    background-color: #ff5722;
+    top: 0px;
+    transition: all 200ms ease-out;
+}
+.tictac::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: 0px;
+    left: 60%;
+    height: 2px;
+    background-color: #ff5722;
+    transition: all 200ms ease-out;
+}
+.tictac:hover.tictac::before,
+.tictac:hover.tictac::after{
+    width: 100%;
+    left: 0px;
+}
+
+
+
+
+@media (max-width: 481px) {
+    body{
+        width: 100%;
+        height: fit-content !important;
+        flex-flow: column;
+    }
+    .basic{
+        width: 90%;
+        height: 90vh ;
+    }
+    .box{
+        width: 100% ;
+        height: 95%;
+        flex-flow: row wrap;
+        justify-content: space-between !important;
+    }
+    .tictac,
+    .links{
+        width: calc((100% - 40px) / 2) !important;
+        height: calc((100% - 150px) / 2) !important;
+    }
+    .link-tit-tic,
+    .link-tit{
+        font-size: 18px;
+    }
+    .link-desc-tic,
+    .link-desc{
+        font-size: 13px;
+    }
+    .basic-two{
+        width: 90%;
+        height: 85.5vh;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .tictac{
+        width: calc((100% - 40px) / 2) !important;
+        height: calc((100% - 150px) / 2) !important;
+    }
+}
